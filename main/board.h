@@ -20,9 +20,9 @@
 #define LED_OFF 0
 
 #define LED_B                           GPIO_NUM_2
-#define BUTTON_PIN                      GPIO_NUM_23
-#define FIRST_TK_LEVEL_SWT_IN_PIN       GPIO_NUM_19
-#define DRAIN_TK_LEVEL_SWT_IN_PIN       GPIO_NUM_18
+#define BUTTON_PIN                      GPIO_NUM_17
+#define FIRST_TK_LEVEL_SWT_IN_PIN       GPIO_NUM_16
+#define DRAIN_TK_LEVEL_SWT_IN_PIN       GPIO_NUM_4
 // #define I2C_MASTER_SCL_IO 26        /*!< gpio number for I2C master clock */
 // #define I2C_MASTER_SDA_IO 25        /*!< gpio number for I2C master data  */
 
