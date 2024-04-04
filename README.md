@@ -1,7 +1,17 @@
-| Supported Targets | ESP32 |
-| ----------------- | ----- |
+# Overfill protection for Sewage Treatment System
 
-ESP BLE Mesh Vendor Server Example
-==================================
+This device used for protection autonomous Sewage Treatment System (STS) ТОПАС-5 (Topas 5) as on picture:
 
-For description of this example please refer to [ESP BLE Mesh Vendor Client Example](../vendor_client/README.md)
+### Topas 5 example
+![Alt text](hardware/topas5_2kompressora.jpg?raw=true)
+
+For level overfill measure used 2 float switches: for Incame tank and Drain tank. 
+Circuit diagram shown bellow.
+
+### Circuit diagram  
+![Alt text](hardware/diagramm.png?raw=true)
+
+### PCB view  
+![Alt text](hardware/pcb_view.jpg?raw=true)
+
+Controller ESP32 connected to Bluetooth MESH and broadcast state to [home_automation_server](https://github.com/vpq-is-me/home_auto_nodejs.git) (running on Raspberry Pi) and __most importantly__ to [water pump controller](https://github.com/vpq-is-me/WaterPumpController_ESP32.git) to stop water feeding in case of STS failure. 
